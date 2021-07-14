@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Cucumber</title>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<style>
+.cucumber-react .cucumber-status--passed {
+  color: #2CB14A;
+}
+.cucumber-react .cucumber-status--skipped {
+  color: #00A0CC;
+}
+.cucumber-react .cucumber-status--pending {
+  color: #FFAD33;
+}
+.cucumber-react .cucumber-status--undefined {
+  color: #FFAD33;
+}
+.cucumber-react .cucumber-status--ambiguous {
+  color: #F4EBFD;
+}
+.cucumber-react .cucumber-status--failed {
+  color: #BB0000;
+}
+.cucumber-react .cucumber-status--unknown {
+  color: #B6BECB;
+}
+.cucumber-react h1, .cucumber-react h2, .cucumber-react h3 {
+  padding: 0;
+  margin: 0;
+}
+.cucumber-react a {
+  color: inherit;
+}
+.cucumber-react .gherkin-document-list {
+  font: 14px "Open Sans", sans-serif;
+  color: #161C24;
+  background: #fff;
+  overflow-x: hidden;
+}
+.cucumber-react .cucumber-title {
+  margin-top: 0.3em;
+  margin-bottom: 0;
+  display: inline-block;
+}
+.cucumber-react .cucumber-title__keyword {
+  font-weight: bold;
+}
+.cucumber-react .cucumber-title__text {
+  font-weight: normal;
+}
+.cucumber-react .cucumber-tags {
+  padding: 0;
+  margin-bottom: 0;
+}
+.cucumber-react .cucumber-tags .cucumber-tag {
+  display: inline;
+  list-style-type: none;
+  padding: 4px 8px 4px 8px;
+  margin-right: 6px;
+  background-color: #FFFFFF;
+  border-radius: 6px;
+}
+.cucumber-react .cucumber-feature__icon {
+  padding-top: 0.35em;
+  padding-right: 0.5em;
+}
+.cucumber-react .cucumber-description,
+.cucumber-react .cucumber-children {
+  margin-left: 1em;
+}
+.cucumber-react .cucumber-feature,
+.cucumber-react .cucumber-rule,
+.cucumber-react .cucumber-scenario,
+.cucumber-react .cucumber-background {
+  margin-bottom: 1em;
+}
+.cucumber-react .cucumber-steps {
+  list-style-type: none;
+  padding-left: 10px;
+}
+.cucumber-react .cucumber-steps .cucumber-step {
+  display: flex;
+}
+.cucumber-react .cucumber-steps .cucumber-step__status {
+  padding-top: 0.2em;
+  padding-right: 0.5em;
+}
+.cucumber-react .cucumber-steps .cucumber-step__content {
+  flex-grow: 1;
+}
+.cucumber-react .cucumber-steps .cucumber-step__keyword {
+  font-weight: bold;
+}
+.cucumber-react .cucumber-steps .cucumber-step__text {
+  font-weight: normal;
+}
+.cucumber-react .cucumber-steps .cucumber-step__param {
+  font-weight: normal;
+  font-style: italic;
+}
+.cucumber-react .cucumber-table {
+  border-collapse: collapse;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+.cucumber-react .cucumber-table__header-cell {
+  border: 1px solid #4B5662;
+  padding: 0.3em;
+}
+.cucumber-react .cucumber-table__cell {
+  border: 1px solid #4B5662;
+  padding: 0.3em;
+}
+.cucumber-react .cucumber-table__cell__status {
+  padding: 0.5em 3px 3px 3px;
+}
+.cucumber-react .cucumber-table__cell__step {
+  flex-grow: 1;
+}
+.cucumber-react .cucumber-code {
+  padding: 0.25em;
+  background-color: #ebebeb;
+}
+.cucumber-react .cucumber-error {
+  padding: 0.5em;
+  margin: 0;
+  overflow: scroll;
+}
+.cucumber-react .cucumber-no-documents {
+  font: 14px "Open Sans", sans-serif;
+}
+.cucumber-react .cucumber-attachment {
+  background-color: #ebebeb;
+  padding: 0.5em;
+}
+.cucumber-react .cucumber-attachment__icon {
+  margin-right: 0.5em;
+}
+.cucumber-react .cucumber-attachment__image {
+  margin-top: 1em;
+}
+.cucumber-react .cucumber-anchor {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 0.3em;
+}
+.cucumber-react .cucumber-anchor__link {
+  opacity: 0;
+  transition: all 0.35s ease-in-out;
+  position: absolute;
+  left: -20px;
+  display: flex;
+  align-items: center;
+}
+.cucumber-react .cucumber-anchor__icon {
+  margin-right: 0.5em;
+}
+.cucumber-react .cucumber-anchor:hover a {
+  opacity: 1;
+  width: max-content;
+  transition: all 0.35s ease-in-out;
+}
+.cucumber-react .cucumber-anchor > * {
+  height: 100%;
+  margin-top: 0px;
+}
+
+.cucumber-report-header {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font: 11px "Open Sans", sans-serif;
+  margin-bottom: 1em;
+}
+.cucumber-report-header > * {
+  padding: 1em;
+}
+.cucumber-report-header .cucumber-status-filter {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.cucumber-report-header .cucumber-status-filter table {
+  width: 100%;
+}
+.cucumber-report-header .cucumber-execution-data {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.cucumber-report-header .cucumber-search-bar {
+  border-right: 0;
+}
+.cucumber-report-header .cucumber-search-bar form.cucumber-search-bar-search {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 9fr 1fr;
+}
+.cucumber-report-header .cucumber-search-bar form.cucumber-search-bar-search input {
+  padding: 0.4em;
+  border-radius: 0;
+}
+.cucumber-report-header .cucumber-search-bar form.cucumber-search-bar-search button {
+  height: 2.2em;
+  padding-left: 0.6em;
+  padding-right: 0.6em;
+}
+.cucumber-report-header .cucumber-search-bar p.help {
+  font-size: 80%;
+}
+.cucumber-report-header .cucumber-search-bar form.cucumber-search-bar-filter ul {
+  display: inline;
+}
+.cucumber-report-header .cucumber-search-bar form.cucumber-search-bar-filter ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+.cucumber-report-header .cucumber-search-bar form.cucumber-search-bar-filter ul li input {
+  display: inline-block;
+  width: auto;
+  height: 0.6em;
+}
+.cucumber-report-header .cucumber-search-bar form.cucumber-search-bar-filter ul li label {
+  padding-right: 1em;
+}
+
+@media only screen and (min-width: 600px) {
+  .cucumber-report-header {
+    grid-template-columns: 1fr 1fr;
+  }
+  .cucumber-report-header .cucumber-status-filter {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .cucumber-report-header .cucumber-search-bar {
+    grid-column: 1/-1;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .cucumber-report-header {
+    grid-template-columns: 1fr 1fr 2fr;
+  }
+  .cucumber-report-header .cucumber-status-filter {
+    border-bottom: 0;
+  }
+  .cucumber-report-header .cucumber-execution-data {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 0;
+  }
+  .cucumber-report-header .cucumber-search-bar {
+    grid-column: auto;
+  }
+}
+.accordion {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+}
+
+.accordion__item + .accordion__item {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.accordion__button {
+    background-color: #f4f4f4;
+    color: #444;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    border: none;
+}
+
+.accordion__button:hover {
+    background-color: #ddd;
+}
+
+.accordion__button:before {
+    display: inline-block;
+    content: '';
+    height: 10px;
+    width: 10px;
+    margin-right: 12px;
+    border-bottom: 2px solid currentColor;
+    border-right: 2px solid currentColor;
+    transform: rotate(-45deg);
+}
+
+.accordion__button[aria-expanded='true']::before,
+.accordion__button[aria-selected='true']::before {
+    transform: rotate(45deg);
+}
+
+.accordion__panel {
+    padding: 20px;
+    animation: fadein 0.35s ease-in;
+}
+
+	</style>
+</head>
+<body>
+<div id="content">
+</div>
+<script>
+window.CUCUMBER_MESSAGES = [{"meta":{"protocolVersion":"13.2.1","implementation":{"name":"cucumber-jvm","version":"6.9.1"},"runtime":{"name":"Java HotSpot(TM) 64-Bit Server VM","version":"11.0.11+9-LTS-194"},"os":{"name":"Windows 10"},"cpu":{"name":"amd64"}}},{"testRunStarted":{"timestamp":{"seconds":"1626300702","nanos":81402100}}},{"source":{"uri":"file:///C:/Users/Gebruiker/IdeaProjects/SeleniumCourse/src/test/features/ecosia.feature","data":"Feature: Ecosia tests\r\n\r\n  Background:\r\n    Given user goes to home page\r\n\r\n  Scenario: user search for apples in Home page\r\n    Given user selects the search bar\r\n    Then user types \"Apples\" in the search bar\r\n\r\n  Scenario: user is looking at cat pictures\r\n    Given user selects the search bar\r\n    Then user types \"Cats\" in the search bar\r\n    And select the \"Images\" tab\r\n\r\n  Scenario: user is looking for news about potatoes\r\n    Given user selects the search bar\r\n    Then user types \"Potatoes\" in the search bar\r\n    And select the \"News\" tab\r\n\r\n  Scenario: user is looking for videos about water\r\n    Given user selects the search bar\r\n    Then user types \"Water\" in the search bar\r\n    And select the \"Videos\" tab\r\n","mediaType":"text/x.cucumber.gherkin+plain"}},{"gherkinDocument":{"uri":"file:///C:/Users/Gebruiker/IdeaProjects/SeleniumCourse/src/test/features/ecosia.feature","feature":{"location":{"line":1,"column":1},"language":"en","keyword":"Feature","name":"Ecosia tests","children":[{"background":{"location":{"line":3,"column":3},"keyword":"Background","steps":[{"location":{"line":4,"column":5},"keyword":"Given ","text":"user goes to home page","id":"cde995aa-3a94-43d7-980e-290fdb88f68f"}],"id":"3051424a-642a-42f0-ba25-254dd1ffdbe0"}},{"scenario":{"location":{"line":6,"column":3},"keyword":"Scenario","name":"user search for apples in Home page","steps":[{"location":{"line":7,"column":5},"keyword":"Given ","text":"user selects the search bar","id":"fef21ee6-6a4f-4ff7-878c-48a216ed06cf"},{"location":{"line":8,"column":5},"keyword":"Then ","text":"user types \"Apples\" in the search bar","id":"c47c50e8-084b-4eca-af3c-982349db91f3"}],"id":"f6711c98-ccbf-48d4-a0c6-fdb9ccb7e035"}},{"scenario":{"location":{"line":10,"column":3},"keyword":"Scenario","name":"user is looking at cat pictures","steps":[{"location":{"line":11,"column":5},"keyword":"Given ","text":"user selects the search bar","id":"768fa556-8f77-4124-a307-aca169a0f997"},{"location":{"line":12,"column":5},"keyword":"Then ","text":"user types \"Cats\" in the search bar","id":"9c5556ba-7fe1-47f8-a09d-c47d5cd73f4d"},{"location":{"line":13,"column":5},"keyword":"And ","text":"select the \"Images\" tab","id":"63b969f2-5a39-430d-abbb-3f6c170f7db3"}],"id":"ccca14db-3131-4088-a39e-9c2558d166cd"}},{"scenario":{"location":{"line":15,"column":3},"keyword":"Scenario","name":"user is looking for news about potatoes","steps":[{"location":{"line":16,"column":5},"keyword":"Given ","text":"user selects the search bar","id":"12ced731-ca38-4b10-8b4b-ecde2cc08264"},{"location":{"line":17,"column":5},"keyword":"Then ","text":"user types \"Potatoes\" in the search bar","id":"b75654fb-94f4-4781-8839-be8d3bf5d056"},{"location":{"line":18,"column":5},"keyword":"And ","text":"select the \"News\" tab","id":"271f80c8-401b-4219-b78e-81281fde38ad"}],"id":"b50ad688-9f45-447c-8f14-61a3d4fcfaf4"}},{"scenario":{"location":{"line":20,"column":3},"keyword":"Scenario","name":"user is looking for videos about water","steps":[{"location":{"line":21,"column":5},"keyword":"Given ","text":"user selects the search bar","id":"918234f3-6a30-4a6e-bf53-306821c21167"},{"location":{"line":22,"column":5},"keyword":"Then ","text":"user types \"Water\" in the search bar","id":"c1a605a5-10bf-42b8-9a02-b4a09e0b699b"},{"location":{"line":23,"column":5},"keyword":"And ","text":"select the \"Videos\" tab","id":"6276d6d7-ccb8-495f-ae65-d860ec146feb"}],"id":"ab28967a-6a58-4ed7-a44d-6e99d7c0567c"}}]}}},{"pickle":{"id":"4f3bdde0-9760-4774-9951-96aa01bbab2c","uri":"file:///C:/Users/Gebruiker/IdeaProjects/SeleniumCourse/src/test/features/ecosia.feature","name":"user search for apples in Home page","language":"en","steps":[{"text":"user goes to home page","id":"9316a6f9-5e6d-4b96-a9b1-a53c1d65ddcb","astNodeIds":["cde995aa-3a94-43d7-980e-290fdb88f68f"]},{"text":"user selects the search bar","id":"9879c0c9-bb8f-474b-9799-efab9db942b3","astNodeIds":["fef21ee6-6a4f-4ff7-878c-48a216ed06cf"]},{"text":"user types \"Apples\" in the search bar","id":"26e799c9-475b-4677-9787-6c93e2ead9ed","astNodeIds":["c47c50e8-084b-4eca-af3c-982349db91f3"]}],"astNodeIds":["f6711c98-ccbf-48d4-a0c6-fdb9ccb7e035"]}},{"pickle":{"id":"1350b1ec-a625-436b-8ccd-578f70b761ac","uri":"file:///C:/Users/Gebruiker/IdeaProjects/SeleniumCourse/src/test/features/ecosia.feature","name":"user is looking at cat pictures","language":"en","steps":[{"text":"user goes to home page","id":"096db9cd-66ea-4b3e-9312-035b8ef36e3e","astNodeIds":["cde995aa-3a94-43d7-980e-290fdb88f68f"]},{"text":"user selects the search bar","id":"b696d068-d276-4743-827a-59f3d3e51b33","astNodeIds":["768fa556-8f77-4124-a307-aca169a0f997"]},{"text":"user types \"Cats\" in the search bar","id":"adc4669d-917c-47a8-a2a7-3d1da7ba8abd","astNodeIds":["9c5556ba-7fe1-47f8-a09d-c47d5cd73f4d"]},{"text":"select the \"Images\" tab","id":"b93b9d88-4f4f-4f83-be84-a113fca220db","astNodeIds":["63b969f2-5a39-430d-abbb-3f6c170f7db3"]}],"astNodeIds":["ccca14db-3131-4088-a39e-9c2558d166cd"]}},{"pickle":{"id":"5c95c95a-ec8f-4ceb-9da0-1fd6da24636b","uri":"file:///C:/Users/Gebruiker/IdeaProjects/SeleniumCourse/src/test/features/ecosia.feature","name":"user is looking for news about potatoes","language":"en","steps":[{"text":"user goes to home page","id":"bfa0abed-1585-4c54-8022-78da0a1cb5a9","astNodeIds":["cde995aa-3a94-43d7-980e-290fdb88f68f"]},{"text":"user selects the search bar","id":"34659c82-4b6d-483b-82ad-d6aed5bea1b6","astNodeIds":["12ced731-ca38-4b10-8b4b-ecde2cc08264"]},{"text":"user types \"Potatoes\" in the search bar","id":"1ec30ce8-7ffa-447b-82b4-8aebd323edbd","astNodeIds":["b75654fb-94f4-4781-8839-be8d3bf5d056"]},{"text":"select the \"News\" tab","id":"6c7fbb1e-2c6a-41fb-94ba-d491b2aaccc9","astNodeIds":["271f80c8-401b-4219-b78e-81281fde38ad"]}],"astNodeIds":["b50ad688-9f45-447c-8f14-61a3d4fcfaf4"]}},{"pickle":{"id":"a7f6cf5c-1189-459b-bc5d-d87ed690e83c","uri":"file:///C:/Users/Gebruiker/IdeaProjects/SeleniumCourse/src/test/features/ecosia.feature","name":"user is looking for videos about water","language":"en","steps":[{"text":"user goes to home page","id":"c1e8be5b-4d39-464a-9cb4-00c22316eadf","astNodeIds":["cde995aa-3a94-43d7-980e-290fdb88f68f"]},{"text":"user selects the search bar","id":"2adb1e08-7489-4aa7-92dc-d9db46039904","astNodeIds":["918234f3-6a30-4a6e-bf53-306821c21167"]},{"text":"user types \"Water\" in the search bar","id":"0807d7de-a750-44d4-8d10-fad42b6990cc","astNodeIds":["c1a605a5-10bf-42b8-9a02-b4a09e0b699b"]},{"text":"select the \"Videos\" tab","id":"054d35d6-d678-4d2a-9f93-f7ace362101e","astNodeIds":["6276d6d7-ccb8-495f-ae65-d860ec146feb"]}],"astNodeIds":["ab28967a-6a58-4ed7-a44d-6e99d7c0567c"]}},{"source":{"uri":"file:///C:/Users/Gebruiker/IdeaProjects/SeleniumCourse/src/test/features/pathe.feature","data":"Feature: Pathe tests\r\n\r\n  Background:\r\n    Given user navigates to the home page\r\n\r\n  Scenario Outline: user reads the available columns\r\n    Given user is reading column \"\u003ccolumn\u003e\"\r\n    Examples:\r\n      | column |\r\n      | Films |\r\n      | Bioscopen |\r\n      | Events |\r\n      | Pathé All Stars |\r\n      | Pathé Unlimited |","mediaType":"text/x.cucumber.gherkin+plain"}},{"gherkinDocument":{"uri":"file:///C:/Users/Gebruiker/IdeaProjects/SeleniumCourse/src/test/features/pathe.feature","feature":{"location":{"line":1,"column":1},"language":"en","keyword":"Feature","name":"Pathe tests","children":[{"background":{"location":{"line":3,"column":3},"keyword":"Background","steps":[{"location":{"line":4,"column":5},"keyword":"Given ","text":"user navigates to the home page","id":"e3b46b27-bd63-41d2-a41c-da504577de28"}],"id":"bab12313-dd56-4571-83d7-9f1966556a26"}},{"scenario":{"location":{"line":6,"column":3},"keyword":"Scenario Outline","name":"user reads the available columns","steps":[{"location":{"line":7,"column":5},"keyword":"Given ","text":"user is reading column \"\u003ccolumn\u003e\"","id":"4aedd90e-df54-4f4d-ace9-8d3f82ba9af9"}],"examples":[{"location":{"line":8,"column":5},"keyword":"Examples","tableHeader":{"location":{"line":9,"column":7},"cells":[{"location":{"line":9,"column":9},"value":"column"}],"id":"4e31333f-ab5c-4b8b-b968-747d73033f6b"},"tableBody":[{"location":{"line":10,"column":7},"cells":[{"location":{"line":10,"column":9},"value":"Films"}],"id":"977a0a82-9e10-44ae-8899-6155109910df"},{"location":{"line":11,"column":7},"cells":[{"location":{"line":11,"column":9},"value":"Bioscopen"}],"id":"0bec9038-c11d-489d-b1f8-db7d537c5718"},{"location":{"line":12,"column":7},"cells":[{"location":{"line":12,"column":9},"value":"Events"}],"id":"ac12eea5-390c-44e7-97fa-3a8d1ff1a920"},{"location":{"line":13,"column":7},"cells":[{"location":{"line":13,"column":9},"value":"Pathé All Stars"}],"id":"52a6e3de-170a-4672-9841-b0952fbdd8e2"},{"location":{"line":14,"column":7},"cells":[{"location":{"line":14,"column":9},"value":"Pathé Unlimited"}],"id":"95bf50f8-9136-425

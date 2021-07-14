@@ -1,0 +1,210 @@
+-------------------------------------------------------------------------------
+Test set: runner.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 0, Errors: 9, Skipped: 0, Time elapsed: 2.023 sec <<< FAILURE!
+user search for apples in Home page(Ecosia tests)  Time elapsed: 0.306 sec  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: The step "user goes to home page" is undefined. You can implement it using the snippet(s) below:
+
+@Given("user goes to home page")
+public void user_goes_to_home_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Some other steps were also undefined:
+
+@Given("user selects the search bar")
+public void user_selects_the_search_bar() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("user types {string} in the search bar")
+public void user_types_in_the_search_bar(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+user is looking at cat pictures(Ecosia tests)  Time elapsed: 0.026 sec  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: The step "user goes to home page" is undefined. You can implement it using the snippet(s) below:
+
+@Given("user goes to home page")
+public void user_goes_to_home_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Some other steps were also undefined:
+
+@Given("user selects the search bar")
+public void user_selects_the_search_bar() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("user types {string} in the search bar")
+public void user_types_in_the_search_bar(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("select the {string} tab")
+public void select_the_tab(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+user is looking for news about potatoes(Ecosia tests)  Time elapsed: 0.01 sec  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: The step "user goes to home page" is undefined. You can implement it using the snippet(s) below:
+
+@Given("user goes to home page")
+public void user_goes_to_home_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Some other steps were also undefined:
+
+@Given("user selects the search bar")
+public void user_selects_the_search_bar() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("user types {string} in the search bar")
+public void user_types_in_the_search_bar(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("select the {string} tab")
+public void select_the_tab(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+user is looking for videos about water(Ecosia tests)  Time elapsed: 0.022 sec  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: The step "user goes to home page" is undefined. You can implement it using the snippet(s) below:
+
+@Given("user goes to home page")
+public void user_goes_to_home_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Some other steps were also undefined:
+
+@Given("user selects the search bar")
+public void user_selects_the_search_bar() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("user types {string} in the search bar")
+public void user_types_in_the_search_bar(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("select the {string} tab")
+public void select_the_tab(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+user reads the available columns #1(Pathe tests)  Time elapsed: 0.034 sec  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: The step "user navigates to the home page" is undefined. You can implement it using the snippet(s) below:
+
+@Given("user navigates to the home page")
+public void user_navigates_to_the_home_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Some other steps were also undefined:
+
+@Given("user is reading column {string}")
+public void user_is_reading_column(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+user reads the available columns #2(Pathe tests)  Time elapsed: 0.016 sec  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: The step "user navigates to the home page" is undefined. You can implement it using the snippet(s) below:
+
+@Given("user navigates to the home page")
+public void user_navigates_to_the_home_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Some other steps were also undefined:
+
+@Given("user is reading column {string}")
+public void user_is_reading_column(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+user reads the available columns #3(Pathe tests)  Time elapsed: 0.02 sec  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: The step "user navigates to the home page" is undefined. You can implement it using the snippet(s) below:
+
+@Given("user navigates to the home page")
+public void user_navigates_to_the_home_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Some other steps were also undefined:
+
+@Given("user is reading column {string}")
+public void user_is_reading_column(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+user reads the available columns #4(Pathe tests)  Time elapsed: 0.017 sec  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: The step "user navigates to the home page" is undefined. You can implement it using the snippet(s) below:
+
+@Given("user navigates to the home page")
+public void user_navigates_to_the_home_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Some other steps were also undefined:
+
+@Given("user is reading column {string}")
+public void user_is_reading_column(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+user reads the available columns #5(Pathe tests)  Time elapsed: 0.015 sec  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: The step "user navigates to the home page" is undefined. You can implement it using the snippet(s) below:
+
+@Given("user navigates to the home page")
+public void user_navigates_to_the_home_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Some other steps were also undefined:
+
+@Given("user is reading column {string}")
+public void user_is_reading_column(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
